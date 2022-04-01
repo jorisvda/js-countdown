@@ -1,25 +1,22 @@
 const countdown = () => {
-  const countDate = new Date("December 24, 2021 17:00:00").getTime(); //get time in milliseconds
-  const now = new Date().getTime();
-  const gap = countDate - now;
+ const countDate = new Date("April 22, 2022 17:00:00");
+ console.log(countDate); 
+ const now = new Date();
+ console.log(now);
+}
 
-  //calculating time
-  const second = 1000;
-  const minute = second * 60;
-  const hour = minute * 60;
-  const day = hour * 24;
+countdown();
 
-  //calculate
-  const textDay = Math.floor(gap / day);
-  const textHour = Math.floor((gap % day) / hour);
-  const textMinute = Math.floor((gap % hour) / minute);
-  const textSecond = Math.floor((gap % minute) / second);
 
-  //implement time into html
-  document.querySelector(".day").innerText = textDay;
-  document.querySelector(".hour").innerText = textHour;
-  document.querySelector(".minute").innerText = textMinute;
-  document.querySelector(".second").innerText = textSecond;
+
+  //calculating time variables
+ 
+
+  //calculate days, hours, minutes and secons
+  
+
+  //implement time into html with querySelectors
+ 
 };
 
-setInterval(countdown, 1000);
+
